@@ -1,6 +1,14 @@
-from django.urls import path
+
+from rest_framework.routers import SimpleRouter
+from .views import ArizaViewSet, QolanmaViewSet
 
 
-urlpatterns = [
-    # path('yangilik_search/', YangilikSearchView.as_view(), name='yangilik_search'),
-]
+
+router = SimpleRouter()
+
+router.register('ariza', ArizaViewSet, basename='ariza')
+router.register('qolanma', QolanmaViewSet, basename='qolanma')
+
+
+urlpatterns = []
+urlpatterns += router.urls

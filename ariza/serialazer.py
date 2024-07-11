@@ -1,7 +1,13 @@
 from rest_framework import serializers
-from .models import InstitutHaqida
+from .models import Ariza, Qolanma
 
-class InstitutHaqidaSerializer(serializers.ModelSerializer):
+class ArizaSerializer(serializers.ModelSerializer):
     class Meta:
-        model = InstitutHaqida
+        model = Ariza
+        fields = '__all__'
+
+
+class QolanmaSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Qolanma
         fields = '__all__'
