@@ -13,6 +13,7 @@ class Ariza(models.Model):
     fuqaroligi = models.CharField(max_length=255, blank=True)
     telegram_name = models.CharField(max_length=255, blank=True)
     whatsapp_name = models.CharField(max_length=255, blank=True)
+    vaqt = models.DateTimeField(auto_now_add=True)
 
 
 class Qolanma(models.Model):
