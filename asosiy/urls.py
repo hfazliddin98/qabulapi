@@ -32,6 +32,7 @@ urlpatterns = [
 
     path('users/', include('users.urls')),
     path('ariza/', include('ariza.urls')),
+    path('malumot/', include('malumot.urls')),
   
 
     # swagger
