@@ -6,6 +6,8 @@ class Ariza(models.Model):
     ism = models.CharField(max_length=255, blank=True)
     sharif = models.CharField(max_length=255, blank=True)
     email = models.CharField(max_length=255, blank=True)
+    daraja = models.CharField(max_length=255, blank=True)
+    yonalish = models.CharField(max_length=255, blank=True)
     telefon_nomer = models.CharField(max_length=255, blank=True)
     tugatgan_oligoh = models.CharField(max_length=255, blank=True)
     fuqaroligi = models.CharField(max_length=255, blank=True)
